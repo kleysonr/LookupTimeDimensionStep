@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+
+   id="LookupTimeDimensionPlugin"
+   iconfile="icon.png"
+   description="Lookup Time Dimension"
+   tooltip="Lookup/Create an entry on DW dimension time table and return the id."
+   category="Data Warehouse"
+   classname="br.gov.go.saude.plugin.kettle.lookuptimedimension.LookupTimeDimensionMeta">
+		
+		<libraries>
+    		<library name="lookuptimedimensionstep.jar"/>
+		</libraries>
+		
+</plugin>
