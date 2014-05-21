@@ -56,6 +56,42 @@ Some combinations are allowed and take precedence in the following order:
 Set 'Enable year null' checkbox if you have any data without date. This will create the id 0.
 Set 'Only Lookup' checkbox to avoid gaps on the date dimension. A preload is necessary to populate the dimension.
 
+Create the dimension table.
+
+	CREATE TABLE dim_date(
+	    id INTEGER,
+	    is_last_day_of_month VARCHAR,
+	    year_semester VARCHAR,
+	    semester_number INTEGER,
+	    month_name VARCHAR,
+	    month_abbreviation VARCHAR,
+	    week_in_month INTEGER,
+	    is_first_day_of_month VARCHAR,
+	    week_in_year INTEGER,
+	    bimonthly_name VARCHAR,
+	    date_medium VARCHAR,
+	    quarter_number INTEGER,
+	    is_first_day_in_week VARCHAR,
+	    day_in_year INTEGER,
+	    month_number INTEGER,
+	    bimonthly_number INTEGER,
+	    semester_name VARCHAR,
+	    year_bimonthly VARCHAR,
+	    year_quarter VARCHAR,
+	    is_last_day_in_week VARCHAR,
+	    day_name VARCHAR,
+	    date_short VARCHAR,
+	    year_month_number VARCHAR,
+	    quarter_name VARCHAR,
+	    date_full VARCHAR,
+	    year_of_week INTEGER,
+	    year_month_abbreviation VARCHAR,
+	    day_in_month INTEGER,
+	    day_abbreviation VARCHAR,
+	    year4 INTEGER,
+	    date_long VARCHAR
+	);
+
 
 HOW TO INSTALL
 --------------
